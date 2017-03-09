@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_replace_or_hide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xuchengpu.fragmentdemo.testreplace.view.ReplaceOrHideActivity">
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#22000000"
+        ></FrameLayout>
+
+    <RadioGroup
+
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+
+            android:id="@+id/rb_main_home"
+            style="@style/MainButtonStyle"
+            android:text="Fragment1"
+            android:background="#44000000"
+            android:layout_margin="11dp"/>
+
+        <RadioButton
+
+            android:id="@+id/rb_main_type"
+            style="@style/MainButtonStyle"
+            android:text="Fragment2"
+            android:background="#44000000"
+            android:layout_margin="11dp"/>
+
+        <RadioButton
+
+            android:id="@+id/rb_main_community"
+            style="@style/MainButtonStyle"
+            android:text="Fragment3"
+            android:background="#44000000"
+            android:layout_margin="11dp"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>

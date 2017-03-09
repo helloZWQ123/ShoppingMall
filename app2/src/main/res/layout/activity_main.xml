@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atguigu.app2.MainActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:text="首页"
+            style="@style/rb_main_style" />
+        <RadioButton
+            android:id="@+id/rb_community"
+            android:text="社区"
+            style="@style/rb_main_style" />
+        <RadioButton
+            android:id="@+id/rb_user"
+            android:text="用户"
+            style="@style/rb_main_style" />
+        <RadioButton
+            android:id="@+id/rb_type"
+            android:text="类型"
+            style="@style/rb_main_style" />
+
+    </RadioGroup>
+
+</LinearLayout>

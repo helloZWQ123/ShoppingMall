@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ed3f3f"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/tv_search_home"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_home_shape"
+            android:drawableLeft="@drawable/home_search_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:hint="输入搜索信息"
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/iv_search_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_search_home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:clickable="true"
+            android:src="@drawable/voice_empty" />
+
+        <TextView
+            android:id="@+id/tv_message_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_titlebar"
+        />
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/rv_home"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_rec_textview"
+        android:text="清除记录"
+        android:textColor="#ff0000"
+        android:visibility="gone"/>
+</RelativeLayout>
+
+
